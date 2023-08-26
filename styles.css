@@ -1,0 +1,199 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+  /* GLobal */
+
+  *{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+h1, h2,h3,p{
+    text-align: center;
+}
+
+.box{
+    padding:40px;
+    background-color:aliceblue;
+
+}
+/* Navigation bar*/
+
+#nav-bar{
+    list-style-type: none;
+    text-align: center;
+    width:100%;
+    background-color: cyan;
+    
+    position:fixed;
+    top:0px;
+    
+
+}
+
+#nav-bar li{
+    display:inline-block;
+    padding: 20px;
+    margin:0;
+
+}
+
+#nav-bar li:hover{
+    background-color: rgba(16, 96, 177, 0.555);
+    transition: ease-in-out;
+    transition-duration: .25s;
+    color: white;
+
+}
+
+#nav-bar li a{
+    text-decoration: none;
+
+}
+
+/* Profile container */
+
+.profile{
+margin-top: 110px;
+}
+.profile-box{
+    padding:40px;
+    display:flex;
+    flex-direction: row;
+    background-color:aliceblue;
+
+}
+
+.profile-box p{
+    top:50%;
+    left: 50%;
+    padding:10px;
+}
+
+.profile-box img{
+    min-width:250px;
+    max-height:350px;
+    margin-top:10px;
+    margin-left: auto;
+    
+}
+
+/* Skills container */
+
+#skills{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills h2{
+    padding-bottom: 10px;
+}
+.skills-icons{
+    margin: 20px 5px 20 0;
+    max-width: 170px;
+    min-width:170px;
+    background-color: white;
+}
+
+/* Hobbies container */
+.hobby-list {
+    height: 400px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.hobby-list img{
+    width:200px;
+}
+
+/* Education */
+#education{
+    margin-top:40px;
+}
+
+/*Contact Me*/
+#location h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#location iframe{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contact-div{
+    margin-top:50px;
+    margin-bottom:25px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-div p{
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+
+
+/* Footer bar*/
+.footer{
+    margin-bottom: 50px;
+
+}
+
+#nav-bar-footer li a{
+    text-align: center;
+    text-decoration: none;
+        display:block;
+        padding: 5px;
+        margin:0;
+}
+
+/* Social icons*/
+.social-icons{
+    text-align: center;
+    font-size: 50px;
+    word-spacing: 50px;
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+.social-icons .fa-github{
+    color: rgb(0, 0, 0);
+}
+
+.social-icons .fa-twitter{
+    color:rgb(0, 166, 255)
+}
+
+.social-icons .fa-facebook{
+    color:blue;
+}
+
+.social-icons .fa-linkedin{
+    color:rgb(3, 109, 162);
+}
+
+
+/*footer*/
+footer{
+    padding-bottom: 30px;
+    padding-top:30px;
+    height: 110px;
+    background-color: cyan;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+}
+
+footer a:link{
+    color:rgb(98, 0, 255);
+}
+
+footer a:visited{
+    color:black;
+}
