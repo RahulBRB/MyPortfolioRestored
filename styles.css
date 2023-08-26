@@ -40,7 +40,7 @@ h1, h2,h3,p{
 }
 
 #nav-bar li:hover{
-    background-color: rgba(16, 96, 177, 0.555);
+    background-color: rgb(0, 213, 255);
     transition: ease-in-out;
     transition-duration: .25s;
     color: white;
@@ -113,14 +113,55 @@ margin-top: 110px;
 }
 
 /*Contact Me*/
-#location h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.box h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #location iframe{
+    width:500px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.form{
+    background-color:rgb(235, 245, 254);
+    width:30%;
+    padding:25px;
+}
+
+
+.form input, textarea{
+    width:98%;
+    padding:10px;
+    font-size:15px;
+    resize: none;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    border-radius: 1%;
+    border-style: dashed;
+}
+
+
+.form button{
+    text-align: center;
+    margin-left:35%;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: aqua;
+    font-size: 15px;
+    border-radius: 6%;
+    border: none;
+}
+
+.form button:hover{
+    background-color: rgb(0, 213, 255);
+    cursor: pointer;
+}
+#location{
+    display: flex;
 }
 .contact-div{
     margin-top:50px;
@@ -132,8 +173,12 @@ margin-top: 110px;
 
 .contact-div p{
     text-align: justify;
-    font-size: 14px;
+    font-size: normal;
 
+}
+#nav-bar-footer li{
+    display:flex;
+    justify-content:flex-start;
 }
 
 
