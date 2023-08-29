@@ -102,16 +102,24 @@ margin-top: 110px;
 }
 
 /* Hobbies container */
-.hobby-list {
-    height: 400px;
+#four-hobby {
+    height: auto;
     width:100%;
-    display:inline-block;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.hobby-list img{
-    width:200px;
+.hobby-box{
+    height:350px;
+    max-width: 25%;
+    min-width:250px;
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+
+.hobby-box img{
+    width: 150px;
 }
 
 /* Education */
