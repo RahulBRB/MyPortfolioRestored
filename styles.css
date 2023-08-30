@@ -12,6 +12,9 @@
 h1, h2,h3,p{
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
 
 .box{
     padding:40px;
@@ -22,43 +25,40 @@ h1, h2,h3,p{
 }
 /* Navigation bar*/
 
-#nav-bar{
+#nav-bar {
     list-style-type: none;
     text-align: center;
-    width:100%;
+    width: 100%;
     background-color: cyan;
-    position:fixed;
-    top:0px;
-    
-
-}
-
-#nav-bar li{
-    display:inline-block;
-    padding: 20px;
-    margin:0;
-
-}
-
-#nav-bar li:hover{
-    background-color: rgb(0, 213, 255);
-    transition: ease-in-out;
-    transition-duration: .25s;
-    color: white;
-
-}
-
-#nav-bar li a{
-    text-decoration: none;
-
-}
-
-/* Profile container */
-.profile {
-    margin-top: 120px;
+    top: 0;
+    margin: 0;
+    padding: 0;
   }
   
+  #nav-bar li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+  }
+  #nav-bar li:hover {
+    font-weight: bold;
+  }
+  #nav-bar li a {
+    text-decoration: none;
+    transition: ease-out 0.05s;
+  }
+  
+  #nav-bar li a:hover {
+    border-bottom: 3px solid blue;
+  }
+  
+  
+
+/* Profile container */
+
+  
   .profile-box-two {
+    padding-top: 2.3%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -67,11 +67,10 @@ h1, h2,h3,p{
   }
   
   .profile-1, .profile-2 {
-    border: 1px solid black;
     border-radius: 2%;
     margin: 2% 0;
     padding: 2%;
-    width: 600px;
+    width: 550px;
     height: auto;
     box-sizing: border-box;
   }
@@ -81,7 +80,33 @@ h1, h2,h3,p{
     max-width: 300px;
     border-radius: 100%;
   }
-  
+
+  .profile-1 img:hover {
+    cursor: pointer;
+    border: 5px solid cyan;
+    background-size: cover;
+    transition: ease-in-out 0.1s;
+  }
+  .profile-1 button{
+    text-align: center;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 25%;
+    margin-right: auto;
+    background-color: aqua;
+    font-size: 15px;
+    border-radius: 6%;
+    border: none;
+  }
+  .profile-1 button:hover{
+    cursor: pointer;
+    background-color: blue;
+    transition: ease-in-out 0.2s;
+    color: white;
+    
+  }
   
 /* Skills container */
 
@@ -171,7 +196,9 @@ h1, h2,h3,p{
     width: 100%;
 }
 
-
+.part-2{
+    width: 500px;
+}
 .part-2 form{
     padding:25px;
     
@@ -192,12 +219,17 @@ h1, h2,h3,p{
     padding-bottom: 8px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 25%;
-    margin-right: auto;
+    margin-left: 35%;
     background-color: aqua;
     font-size: 15px;
     border-radius: 6%;
     border: none;
+}
+.form button:hover{
+    cursor: pointer;
+    background-color: blue;
+    transition: ease-in-out 0.2s;
+    color: white;
 }
 .part-3{
     padding-top:4%;
@@ -246,7 +278,26 @@ h1, h2,h3,p{
     color:rgb(3, 109, 162);
 }
 
-
+.fa-github:hover{
+    font-size: 53px;
+    border-bottom: 4px solid black;
+    transition: ease-out 0.12s;
+}
+.fa-twitter:hover{
+    font-size: 53px;
+    border-bottom: 4px solid black;
+    transition: ease-out 0.12s;
+}
+.fa-facebook:hover{
+    font-size: 53px;
+    border-bottom: 4px solid black;
+    transition: ease-out 0.12s;
+}
+.fa-linkedin:hover{
+    font-size: 53px;
+    border-bottom: 4px solid black;
+    transition: ease-out 0.12s;
+}
 /*footer*/
 footer{
     padding-bottom: 30px;
