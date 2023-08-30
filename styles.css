@@ -16,6 +16,8 @@ h1, h2,h3,p{
 .box{
     padding:40px;
     background-color:aliceblue;
+    width:100%;
+
 
 }
 /* Navigation bar*/
@@ -25,7 +27,6 @@ h1, h2,h3,p{
     text-align: center;
     width:100%;
     background-color: cyan;
-    
     position:fixed;
     top:0px;
     
@@ -53,32 +54,35 @@ h1, h2,h3,p{
 }
 
 /* Profile container */
-
-.profile{
-margin-top: 110px;
-}
-.profile-box{
-    padding:40px;
-    display:flex;
+.profile {
+    margin-top: 120px;
+  }
+  
+  .profile-box-two {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    background-color:aliceblue;
-
-}
-
-.profile-box p{
-    top:50%;
-    left: 50%;
-    padding:10px;
-}
-
-.profile-box img{
-    min-width:250px;
-    max-height:350px;
-    margin-top:10px;
-    margin-left: auto;
-    
-}
-
+    justify-content: space-evenly;
+    background-color: aliceblue;
+  }
+  
+  .profile-1, .profile-2 {
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 2% 0;
+    padding: 2%;
+    width: 600px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .profile-1 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 100%;
+  }
+  
+  
 /* Skills container */
 
 #skills{
@@ -97,42 +101,83 @@ margin-top: 110px;
 }
 
 /* Hobbies container */
-.hobby-list {
-    height: 400px;
+#four-hobby {
+    height: auto;
+    width:100%;
     display: flex;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.hobby-list img{
-    width:200px;
+.hobby-box{
+    height:350px;
+    max-width: 25%;
+    min-width:250px;
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+
+.hobby-box img{
+    width: 150px;
 }
 
 /* Education */
-#education{
-    margin-top:40px;
+#study-two {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
+.clg, .school {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clg img, .school img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 5%;
+    margin-bottom: 2%;
+}
+
+.clg p, .school p {
+    width: 90%;
+    margin: 2%;
+    text-align: center;
+}
+
 
 /*Contact Me*/
-.box h2{
-    margin-top: 10px;
-    margin-bottom: 30px;
+.three-part{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
 }
 
-#location iframe{
+.part-1{
+    padding:2%;
     width:500px;
-    margin-left: 20px;
-    margin-right: 20px;
+    min-width: auto;
+}
+.part-1 iframe{
+    width: 100%;
 }
 
-.form{
-    background-color:rgb(235, 245, 254);
-    width:30%;
+
+.part-2 form{
     padding:25px;
+    
 }
-
-
 .form input, textarea{
-    width:98%;
+    width:100%;
     padding:10px;
     font-size:15px;
     resize: none;
@@ -141,47 +186,26 @@ margin-top: 110px;
     border-radius: 1%;
     border-style: dashed;
 }
-
-
 .form button{
     text-align: center;
-    margin-left:35%;
     padding-top:8px;
     padding-bottom: 8px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: 25%;
+    margin-right: auto;
     background-color: aqua;
     font-size: 15px;
     border-radius: 6%;
     border: none;
 }
-
-.form button:hover{
-    background-color: rgb(0, 213, 255);
-    cursor: pointer;
-}
-#location{
-    display: flex;
-}
-.contact-div{
-    margin-top:50px;
-    margin-bottom:25px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.part-3{
+    padding-top:4%;
 }
 
-.contact-div p{
-    text-align: justify;
-    font-size: normal;
-
+.part-3 li{
+    list-style-type: none;
 }
-#nav-bar-footer li{
-    display:flex;
-    justify-content:flex-start;
-}
-
-
 
 /* Footer bar*/
 .footer{
