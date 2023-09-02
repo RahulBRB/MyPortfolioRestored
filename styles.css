@@ -164,8 +164,9 @@ a{
 }
 
 .clg img, .school img {
+  margin-top:2%;
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     height: 300px;
     border-radius: 5%;
     margin-bottom: 2%;
@@ -174,6 +175,7 @@ a{
 .clg p, .school p {
     width: 90%;
     margin: 2%;
+  margin-bottom:2%;
     text-align: center;
 }
 
@@ -279,22 +281,22 @@ a{
 }
 
 .fa-github:hover{
-    font-size: 53px;
+    font-size: 110%;
     border-bottom: 4px solid black;
     transition: ease-out 0.12s;
 }
 .fa-twitter:hover{
-    font-size: 53px;
+    font-size: 110%;
     border-bottom: 4px solid black;
     transition: ease-out 0.12s;
 }
 .fa-facebook:hover{
-    font-size: 53px;
+    font-size: 110%;
     border-bottom: 4px solid black;
     transition: ease-out 0.12s;
 }
 .fa-linkedin:hover{
-    font-size: 53px;
+    font-size: 110%;
     border-bottom: 4px solid black;
     transition: ease-out 0.12s;
 }
@@ -302,7 +304,7 @@ a{
 footer{
     padding-bottom: 30px;
     padding-top:30px;
-    height: 110px;
+    height: auto;
     background-color: cyan;
     width: 100%;
 }
@@ -316,4 +318,29 @@ footer a:link{
 
 footer a:visited{
     color:black;
+}
+/*Bootom icons for social*/
+
+.social-icons-bot{
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 10px;
+    margin-bottom: 3%;
+    margin-top:30px;
+}
+
+.social-icons-bot .fa-github{
+    color: rgb(0, 0, 0);
+}
+
+.social-icons-bot .fa-twitter{
+    color:rgb(0, 166, 255)
+}
+
+.social-icons-bot .fa-facebook{
+    color:blue;
+}
+
+.social-icons-bot .fa-linkedin{
+    color:rgb(3, 109, 162);
 }
