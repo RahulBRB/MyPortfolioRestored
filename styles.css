@@ -157,10 +157,13 @@ a{
 }
 
 .clg, .school {
-    width: 400px;
+  border-radius: 2%;
+  padding:2%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  background-color:aliceblue;
 }
 
 .clg img, .school img {
